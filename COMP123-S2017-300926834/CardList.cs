@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
+ * Name: Komaldeep Kaur
  * Date: July 27, 2017
  * Description: This is the abstract superclass CardList
  * Version: 0.1 - Created the CardList abstract class

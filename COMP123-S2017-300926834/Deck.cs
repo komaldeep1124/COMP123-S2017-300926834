@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
+ * Name: kOMALDEEP KAUR
  * Date: July 25, 2017
  * Description: This is the Deck class
  * It inherits from the CardList Abstract class

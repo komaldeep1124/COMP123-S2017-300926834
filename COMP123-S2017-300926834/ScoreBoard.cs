@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace COMP123_S2017_300926834
 {
     //name: komaldeep kaur
-   public class ScoreBoard
+   public class ScoreBoard: PickHighestCardForm
     {
         //PUBLIC VARIABLES
 
@@ -69,7 +69,14 @@ namespace COMP123_S2017_300926834
         //public methods
         public static void UpdateTime()
         {
-
+          
+            if (ScoreBoard.Time == 0)
+            {
+                CountDownTimer.Enabled = false;
+                DealButton.Enabled = false;
+                this._disableDealtCards();
+                this._showFinalScore();
+            }
 
         }
 

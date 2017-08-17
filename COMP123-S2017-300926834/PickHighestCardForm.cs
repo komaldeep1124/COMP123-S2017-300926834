@@ -20,7 +20,7 @@ using System.Windows.Forms;
 
 namespace COMP123_S2017_300926834
 {
-    public partial class PickHighestCardForm : Form
+    public partial class PickHighestCardForm : Form, ScoreBoard
     {
         // PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         List<PictureBox> _dealtCardPictureBoxList;
@@ -207,6 +207,8 @@ namespace COMP123_S2017_300926834
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
+            ScoreBoard.Score = 0;
+            ScoreBoard.Time = 30;
         }
 
         /// <summary>
@@ -280,7 +282,7 @@ namespace COMP123_S2017_300926834
                 this.CurrentClickedCard.BackColor = Color.Green;
                 UserMessageTextBox.Text = "You Got It!";
 
-                //Uncomment this --> ScoreBoard.Score += this.MaximumPoints;
+               
 
                 DealButton.Enabled = true;
             }
@@ -366,16 +368,8 @@ namespace COMP123_S2017_300926834
         /// <param name="e"></param>
         private void CountDownTimer_Tick(object sender, EventArgs e)
         {
-            /* Uncomment THIS
-            ScoreBoard.UpdateTime();
-            if (ScoreBoard.Time == 0)
-            {
-                CountDownTimer.Enabled = false;
-                DealButton.Enabled = false;
-                this._disableDealtCards();
-                this._showFinalScore();
-            }
-            */
+          
+          
         }
 
         /// <summary>

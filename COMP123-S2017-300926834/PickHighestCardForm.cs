@@ -14,8 +14,6 @@ using System.Windows.Forms;
  * Name: Komaldeep Kaur
  * Date: 17th august,2017
  * StudentID:300926834
- * Description: this is my form
- * Version: defining variables
  */
 
 namespace COMP123_S2017_300926834
@@ -207,8 +205,7 @@ namespace COMP123_S2017_300926834
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
-            ScoreBoard.Score = 0;
-            ScoreBoard.Time = 30;
+          
         }
 
         /// <summary>
@@ -232,6 +229,11 @@ namespace COMP123_S2017_300926834
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
+            this._showFinalScore();
+            ScoreTextBox();
+            TimeTextBox();
+            FinalScoreTextBox();
+                
 
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();

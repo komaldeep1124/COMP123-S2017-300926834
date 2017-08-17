@@ -66,5 +66,12 @@ namespace COMP123_S2017_300926834
             this.FinalScoreTextBox = finalScoreTextBox;
         }
 
+        //public methods
+        public static void UpdateTime()
+        {
+
+
+        }
+
     }
 }

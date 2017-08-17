@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Komaldeep Kaur
+ * Date: 17th august,2017
+ * StudentID:300926834
+ * Description: this is my form
+ * Version: defining variables
  */
 
 namespace COMP123_S2017_300926834
@@ -29,6 +29,9 @@ namespace COMP123_S2017_300926834
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        ScoreBoard _scoreboard;
+
+
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -110,6 +113,11 @@ namespace COMP123_S2017_300926834
             {
                 this._maximumPoints = value;
             }
+        }
+        public ScoreBoard Scoreboard
+        {
+            get { return this._scoreboard; }
+            set { this._scoreboard = value; }
         }
 
         // CONSTRUCTORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

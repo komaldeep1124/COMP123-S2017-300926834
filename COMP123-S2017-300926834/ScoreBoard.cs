@@ -52,7 +52,19 @@ namespace COMP123_S2017_300926834
             get { return this._timeTextBox; }
             set { this._timeTextBox = value; }
         }
-
+        //constructors
+        /// <summary>
+        /// it is the main constructor with 3 parameters
+        /// </summary>
+        /// <param name="scoreTextBox"></param>
+        /// <param name="timeTextBox"></param>
+        /// <param name="finalScoreTextBox"></param>
+        public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        {
+            this.ScoreTextBox = scoreTextBox;
+            this.TimeTextBox = timeTextBox;
+            this.FinalScoreTextBox = finalScoreTextBox;
+        }
 
     }
 }
